@@ -1,5 +1,5 @@
 var trim = function(string) {
-  return string.replace(/^\s+|\s+$/g, '');
+  return string.trim ? string.trim() : string.replace(/^\s+|\s+$/g, '');
 }
   , isArray = function(arg) {
       return Object.prototype.toString.call(arg) === '[object Array]';
